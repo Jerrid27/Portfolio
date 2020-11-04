@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  background: white;
+  font-family: helvetica;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background: white;
+}
+
+header::after {
+content: '';
+display: table;
+clear: both;
+}
+
+.Logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 25px;
+
+  position: relative;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #1261a0;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #1261a0;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 200ms;
+
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  padding-top: 100px;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.main-content img {
+  float: right;
+  padding-right: 150px;
+  padding-top: 20px;
+}
+
+.sidebar {
+  flex: 1;
+  padding-right: 100px;
+}
+
+.btn {
+  padding-top: 10px;
+  margin-left: -10px;
+}
+
+.button {
+  border:  1px solid #1261a0;
+  background: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-family: helvetica;
+  cursor: pointer;
+  margin: 10px;
+  text-decoration: none;
+  color: #1261a0;
+}
+
+.button:hover {
+  background-color: #1261a0;
+  color: white;
+  transition: all ease-in-out 200ms;
+}

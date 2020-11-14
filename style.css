@@ -1,13 +1,49 @@
 body {
-  margin: 0;
   background: white;
   font-family: helvetica;
 }
-
-.container{
-  width: 90%;
-  margin: 0 auto;
+.Headcontainer{
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
+
+.Section1{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 150px;
+  margin-top: 50px;
+  width: 50%
+}
+
+.Section1 h1{
+  font-size: 40px;
+}
+
+.holdingcontainer{
+  width: 100%;
+  display: flex;
+  padding: 50px;
+  box-sizing: border-box;
+  flex-direction: row;
+  background-color: #f6f6f6;
+  height: auto;
+}
+
+.internalcontainerL{
+  flex: 1;
+  padding: 30px;
+  font-family: helvetica;
+  padding-top: 150px;
+}
+
+.internalcontainerR{
+  flex: 1;
+  padding: 30px;
+  font-size: 12px;
+  font-family: helvetica;
+}
+
 
 header {
   background: white;
@@ -113,4 +149,23 @@ nav a:hover::before {
   background-color: #1261a0;
   color: white;
   transition: all ease-in-out 200ms;
+}
+
+hr {
+  background-color: #1261a0;
+  height: 2px;
+  width: 100px;
+}
+
+.holdingcontainer p{
+  text-align: center;
+}
+.holdingcontainer h2{
+  text-align: center;
+
+}
+
+h2{
+text-align: center;
+font-size: 32px;
 }

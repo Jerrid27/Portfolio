@@ -1,23 +1,51 @@
 body {
-  background: white;
   font-family: helvetica;
 }
+
+html, body{
+  margin: 0;
+  height: 100%;
+}
 .Headcontainer{
-  margin-top: 20px;
   margin-left: 50px;
   margin-right: 50px;
+}
+.Headcontainer2{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.background{
+  background-image: url("background.jpg");
+  width: auto;
+  height: 500px;
 }
 
 .Section1{
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 150px;
-  margin-top: 50px;
+  margin-top: 100px;
   width: 50%
 }
 
 .Section1 h1{
   font-size: 40px;
+  color: white;
+}
+
+.Section1 h3{
+  color: white;
+}
+
+.Section1 p{
+  font-size: 18px;
+  width: 100%;
+  color: white;
+}
+
+.Section2{
+margin-top: 100px;
 }
 
 .holdingcontainer{
@@ -26,8 +54,16 @@ body {
   padding: 50px;
   box-sizing: border-box;
   flex-direction: row;
-  background-color: #f6f6f6;
   height: auto;
+}
+.holdingcontainer2{
+  width: 100%;
+  display: flex;
+  padding: 50px;
+  box-sizing: border-box;
+  flex-direction: row;
+  height: auto;
+  margin-top: 50px;
 }
 
 .internalcontainerL{
@@ -36,6 +72,11 @@ body {
   font-family: helvetica;
   padding-top: 150px;
 }
+.internalcontainerL2{
+  flex: 1;
+  padding: 30px;
+  font-family: helvetica;
+}
 
 .internalcontainerR{
   flex: 1;
@@ -43,10 +84,15 @@ body {
   font-size: 12px;
   font-family: helvetica;
 }
-
+.internalcontainerR2{
+  flex: 1;
+  padding: 30px;
+  font-size: 12px;
+  font-family: helvetica;
+}
 
 header {
-  background: white;
+
 }
 
 header::after {
@@ -73,23 +119,32 @@ nav ul {
 nav li {
   display: inline-block;
   margin-left: 70px;
-  padding-top: 25px;
+  padding-top: 30px;
 
   position: relative;
 }
+.sociallinks{
+  padding-top:30px;
+}
 
-nav a {
-  color: black;
+.sociallinks li{
+  display: inline-block;
+  margin-right: 30px;
+  list-style: none;
+}
+
+.Headcontainer nav a {
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
 }
 
-nav a:hover {
-  color: #1261a0;
+.Headcontainer nav a:hover {
+  color: #93e9be;
 }
 
-nav a::before {
+.Headcontainer nav a::before {
   content: '';
   display: block;
   height: 5px;
@@ -104,7 +159,40 @@ nav a::before {
 
 }
 
-nav a:hover::before {
+.Headcontainer2 nav a:hover::before {
+  width: 100%;
+}
+.Headcontainer2 nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.Headcontainer2 nav a:hover {
+  color: #93e9be;
+}
+
+.Headcontainer2 nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #1261a0;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 200ms;
+
+}
+
+.Headcontainer2 nav a:hover::before {
+  width: 100%;
+}
+
+.Headcontainer nav a:hover::before {
   width: 100%;
 }
 
@@ -134,27 +222,35 @@ nav a:hover::before {
 }
 
 .button {
-  border:  1px solid #1261a0;
-  background: none;
+  background: #1261a0;
   padding: 10px 20px;
   font-size: 14px;
   font-family: helvetica;
   cursor: pointer;
   margin: 10px;
   text-decoration: none;
-  color: #1261a0;
+  color: white;
+  border-radius: 30px;
 }
 
 .button:hover {
-  background-color: #1261a0;
-  color: white;
+  background-color: white;
+  color: #1261a0;
   transition: all ease-in-out 200ms;
+  border: 1px solid #1261a0;
+}
+
+.holdingcontainer hr {
+  background-color: #1261a0;
+  height: 2px;
+  width: 100px;
 }
 
 hr {
   background-color: #1261a0;
   height: 2px;
-  width: 100px;
+  margin:auto;
+  margin-top: 20px;
 }
 
 .holdingcontainer p{
@@ -162,10 +258,46 @@ hr {
 }
 .holdingcontainer h2{
   text-align: center;
-
 }
 
 h2{
 text-align: center;
 font-size: 32px;
+}
+
+.holdingcontainer2 p{
+  font-size: 24px;
+}
+.holdingcontainer2 h3{
+  font-size: 30px;
+}
+
+footer{
+  width: 50%;
+  margin:auto;
+  height: 300px;
+}
+
+footer h2{
+  font-size: 40px;
+}
+
+footer p{
+  text-align: center;
+  width: 75%;
+  margin: auto;
+}
+
+footer .btn{
+  margin: auto;
+  display: flex; justify-content: center;
+  background-color: white;
+}
+
+.logo{
+  position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	z-index: 200;
 }
